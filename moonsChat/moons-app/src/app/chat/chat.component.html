@@ -1,0 +1,11 @@
+<section #chatroom class="chatroom">
+  <div
+    *ngFor="let message of _listMessages.messages;let index=index; let odd=odd; let even=even;"
+    [ngClass]="{'border-info': even, 'border-warning': odd}"
+    class="card mb-3">
+    <div class="card-header">{{message.username}}</div>
+    <div class="card-body">
+      <h4 class="card-title">{{message.message}}</h4>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+<section class="nickname_zone">
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <div class="form-group">
+          <input [(ngModel)]="nickname" class="form-control form-control-lg" type="text" placeholder="Escribe tu nickname...">
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4"><button [disabled]="!nickname" (click)="saveNickname()"class="btn btn-outline-success btn-lg col-12">Save</button></div>
+    </div>
+</section>

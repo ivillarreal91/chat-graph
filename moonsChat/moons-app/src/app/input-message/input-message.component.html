@@ -1,0 +1,10 @@
+<section class="input_zone">
+    <div class="row">
+      <div class="col-10">
+        <div class="form-group">
+          <input [(ngModel)]="message" class="form-control form-control-lg" type="text" placeholder="Escribe un mensaje...">
+        </div>
+      </div>
+      <div class="col-2"><button [disabled]="!message" (click)="sendMessage()"class="btn btn-outline-success btn-lg col-12">Send</button></div>
+    </div>
+</section>

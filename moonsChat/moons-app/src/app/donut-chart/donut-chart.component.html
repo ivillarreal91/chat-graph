@@ -1,0 +1,9 @@
+<div id="chart"></div>
+<div id="labels" class="row">
+	<div id="lables-{{i}}"
+		[class]="getClass(i)"
+		*ngFor="let item of this.data; let i = index;">
+		<h1 id="title-{{i}}">{{item.key}}</h1>
+		<h2 id="subtitle-{{i}}">{{item.value}}</h2>
+	</div>
+</div>
